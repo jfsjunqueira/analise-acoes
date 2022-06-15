@@ -1,7 +1,7 @@
 import os
 import requests
 import zipfile
-from checks import check_already_downloaded
+from src.scrapping.checks import check_already_downloaded
 
 def download_file(url: str, dest_folder: str) -> str:
     if not os.path.exists(dest_folder):
