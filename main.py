@@ -1,5 +1,5 @@
 from src.scrapping.extract import download_file, unzip_file
-from src.scrapping.scrapping_config import *
+from src.config import *
 
 
 def main():
