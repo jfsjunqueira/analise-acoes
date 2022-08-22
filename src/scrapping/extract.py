@@ -4,6 +4,14 @@ import zipfile
 from src.scrapping.checks import check_already_downloaded
 
 
+def download_unzip(url: str, dest_folder: str):
+    print("Downloading the file...")
+    file_name = download_file(url, dest_folder)
+    print("Unzipping the file...")
+    unzip_file(file_name, dest_folder=file_name[:-4])
+    print(f"File {file_name} successfuly downloaded to {dest_folder}!")
+
+
 def create_if_not_dir(dest_folder: str):
     if not os.path.exists(dest_folder):
         os.makedirs(dest_folder)
