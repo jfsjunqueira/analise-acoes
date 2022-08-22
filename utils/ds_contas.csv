@@ -1,0 +1,82 @@
+CD_CONTA,DS_CONTA,0
+1.01,Caixa e Equivalentes de Caixa,242
+1.01,Ativo Circulante,4219
+1.02,Aplicações Financeiras,166
+1.02,Ativos Financeiros,76
+1.02,Ativo Não Circulante,4219
+1.03,Empréstimos e Recebíveis,166
+1.03,Tributos,26
+1.03,Tributos Diferidos,50
+1.04,Tributos Diferidos,166
+1.04,Outros Ativos,76
+1.05,Outros Ativos,166
+1.05,Investimentos,76
+1.06,Investimentos,166
+1.06,Imobilizado,76
+1.07,Imobilizado,166
+1.07,Intangível,76
+1.08,Intangível,166
+2.01,Passivo Circulante,4219
+2.01,Passivos Financeiros ao Valor Justo através do Resultado,50
+2.01,Passivos Financeiros para Negociação,166
+2.01,Passivos Financeiros Avaliados ao Valor Justo através do Resultado,26
+2.02,Outros Passivos Financeiros Designados ao Valor Justo através do Resultado,50
+2.02,Outros Passivos Financeiros ao Valor Justo no Resultado,166
+2.02,Passivo Não Circulante,4219
+2.02,Passivos Financeiros ao Custo Amortizado,26
+2.03,Patrimônio Líquido Consolidado,4219
+2.03,Passivos Financeiros ao Custo Amortizado,216
+2.03,Provisões,26
+2.04,Passivos Fiscais,26
+2.04,Provisões,216
+2.05,Passivos Fiscais,216
+2.05,Outros Passivos,26
+2.06,Passivos sobre Ativos Não Correntes a Venda e Descontinuados,26
+2.06,Outros Passivos,216
+2.07,Passivos sobre Ativos Não Correntes a Venda e Descontinuados,216
+2.07,Patrimônio Líquido Consolidado,26
+2.08,Patrimônio Líquido Consolidado,216
+3.01,Receitas das Operações,30
+3.01,Receitas de Intermediação Financeira,24
+3.01,Receitas da Intermediação Financeira,256
+3.01,Receita de Venda de Bens e/ou Serviços,4886
+3.02,Despesas da Intermediação Financeira,256
+3.02,Despesas de Intermediação Financeira,26
+3.02,Sinistros e Despesas das Operações,30
+3.02,Custo dos Bens e/ou Serviços Vendidos,4886
+3.03,Resultado Bruto de Intermediação Financeira,26
+3.03,Resultado Bruto,4916
+3.03,Resultado Bruto Intermediação Financeira,256
+3.04,Outras Despesas e Receitas Operacionais,26
+3.04,Outras Despesas/Receitas Operacionais,256
+3.04,Despesas/Receitas Operacionais,4886
+3.04,Despesas Administrativas,30
+3.05,Outras Receitas e Despesas Operacionais,30
+3.05,Resultado antes dos Tributos sobre o Lucro,26
+3.05,Resultado Antes do Resultado Financeiro e dos Tributos,4886
+3.05,Resultado Antes dos Tributos sobre o Lucro,256
+3.06,Resultado Financeiro,4886
+3.06,Imposto de Renda e Contribuição Social sobre o Lucro,282
+3.06,Resultado de Equivalência Patrimonial,30
+3.07,Resultado Antes dos Tributos sobre o Lucro,4886
+3.07,Lucro ou Prejuízo das Operações Continuadas,26
+3.07,Resultado Antes do Resultado Financeiro e dos Tributos,30
+3.07,Resultado Líquido das Operações Continuadas,256
+3.08,Resultado Financeiro,30
+3.08,Resultado Líquido das Operações Descontinuadas,282
+3.08,Imposto de Renda e Contribuição Social sobre o Lucro,4886
+3.09,Resultado Líquido das Operações Continuadas,4886
+3.09,Resultado Antes dos Tributos sobre o Lucro,30
+3.09,Lucro ou Prejuízo antes das Participações e Contribuições Estatutárias,26
+3.09,Lucro/Prejuízo Consolidado do Período,256
+3.10,Resultado Líquido de Operações Descontinuadas,4886
+3.10,Imposto de Renda e Contribuição Social sobre o Lucro,30
+3.10,Participações nos Lucros e Contribuições Estatutárias,26
+3.11,Resultado Líquido das Operações Continuadas,30
+3.11,Lucro ou Prejuízo Líquido Consolidado do Período,26
+3.11,Lucro/Prejuízo Consolidado do Período,4886
+3.12,Resultado Líquido de Operações Descontinuadas,30
+3.13,Lucro/Prejuízo Consolidado do Período,30
+3.99,Lucro por Ação - (Reais / Ação),4882
+3.99,Lucro por Ação (R$/Ação),26
+3.99,Lucro por Ação - (R$ / Ação),286
