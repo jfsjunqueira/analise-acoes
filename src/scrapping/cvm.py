@@ -1,10 +1,18 @@
 import os
-import requests
 import zipfile
+
+import requests
+
 from src.scrapping.checks import check_already_downloaded
 
 
-def download_unzip(url: str, dest_folder: str):
+def download_unzip(url: str, dest_folder: str) -> None:
+    """Downloads and unzips file from target url to destination folder.
+
+    Args:
+        url (str): URL of the target file to be downloaded.
+        dest_folder (str): Path to destination folder where file should be unziped.
+    """
     print("Downloading the file...")
     file_name = download_file(url, dest_folder)
     print("Unzipping the file...")
@@ -12,7 +20,12 @@ def download_unzip(url: str, dest_folder: str):
     print(f"File {file_name} successfuly downloaded to {dest_folder}!")
 
 
-def create_if_not_dir(dest_folder: str):
+def create_if_not_dir(dest_folder: str) -> None:
+    """Creates a directory in dest_folder PATH if it doesn't exist yet.
+
+    Args:
+        dest_folder (str): Path to destination folder.
+    """
     if not os.path.exists(dest_folder):
         os.makedirs(dest_folder)
 
