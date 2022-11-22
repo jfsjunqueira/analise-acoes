@@ -2,27 +2,6 @@ import pandas as pd
 from pandas import DataFrame
 
 
-def get_full_df():
-    file_list = [name for name in os.listdir("../" + DATA_PATH) if name[-4:] != ".zip"]
-    df = pd.DataFrame()
-    for idx, file_name in enumerate(file_list):
-        if idx == 0:
-            df = read_cvm(parse_dre_filename(file_name))
-        df = concat_dfs(
-                df,
-                read_cvm(parse_dre_filename(file_name))
-                )
-    return df
-
-def concat_dfs(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
-    return pd.concat((df1, df2), ignore_index=True)
-
-def parse_dre_filename(dir_name):
-    return f"../{DATA_PATH}/{dir_name}/dfp_cia_aberta_DRE_con_{dir_name[-4:]}.csv"
-
-def read_cvm(file_path):
-    return pd.read_csv(file_path, delimiter=";", encoding="latin1")
-
 def treat_value(_df: DataFrame) -> DataFrame:
     """This function takes the VL_CONTA on the dataframe to the same unit in all rows.
 
@@ -44,6 +23,15 @@ def treat_value(_df: DataFrame) -> DataFrame:
 
 
 def treat_date(_df: DataFrame, date_columns=None) -> DataFrame:
+    """Treats date columns from a dataframe to be in datetime[ns] format.
+
+    Args:
+        _df (DataFrame): Target dataframe with date columns to treat.
+        date_columns (_type_, optional): Group of columns to be treated.. Defaults to None.
+
+    Returns:
+        DataFrame: Original dataframe with date columns treated.
+    """
     if date_columns is None:
         date_columns = []
     for col in date_columns:
@@ -52,5 +40,5 @@ def treat_date(_df: DataFrame, date_columns=None) -> DataFrame:
 
 
 def filter_main_rows(df: DataFrame):
-    return df[df['CD_CONTA'].str.len() == 4].copy()
+    return df[df["CD_CONTA"].str.len() == 4].copy()
 
